@@ -374,7 +374,7 @@ p {
 
   .button {
         display: block;
-        width: 95vw;
+        width: 80vw;
         margin: 0 auto;
     } 
 
@@ -384,6 +384,7 @@ p {
         max-width: 95vw;
         margin: 0 auto;
         padding: 2rem 0;
+        background-color: yellow;
     }
 
     /* NAVBAR */
@@ -462,10 +463,6 @@ p {
     }
 
     /* WELCOME SECTION */
-    .container {
-        padding: 4rem 0;
-    }
-
     .mobile-box {      
         flex-direction: column-reverse;
     }
@@ -519,11 +516,6 @@ p {
     }
 
     /* PROFESSIONAL SECTION */
-    .container {
-        width: 95vw;
-        margin: 0 auto;
-    }
-
     .founder-img {
         align-items: center;
     }
