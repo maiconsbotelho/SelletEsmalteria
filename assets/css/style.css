@@ -41,7 +41,7 @@ p {
 .main-container {
     display: flex;
     align-items: center;
-    max-width: 113.4rem;
+    max-width: 55vw;
     margin: 0 auto;
 }
 
@@ -115,10 +115,11 @@ p {
     display: flex;
     padding-bottom: 64px;
     height: 72.9rem;  
+    justify-content: center;
 }
 
 .hero-action {
-    max-width: 113.4rem;
+    max-width: 55vw;
     margin: 0 auto;
     align-self: flex-end;
     flex: 1;
@@ -127,6 +128,10 @@ p {
 .hero-action h1 {
     color: var(--secondary-color);
     font-size: 5rem;
+}
+
+.hero-action .button {
+    box-shadow: 0px 0px 30px 5px var(--secondary-color);
 }
 
 /* WELCOME SECTION */
@@ -155,7 +160,7 @@ p {
 
 /* SERVICES SECTION */
 .service-container {
-    max-width: 113.4rem;
+    max-width: 55vw;
     margin: 0 auto;
     text-align: center;
     padding: 64px 0px;
@@ -183,11 +188,11 @@ p {
 }
 
 .cards-item p {
-    width: 28rem;
+    width: 15vw;
 }
 
 .nail-img {
-    width: 26rem;
+    width: 15vw;
     border-radius: 10px;
 }
 
@@ -211,6 +216,10 @@ p {
     color: #797979;
     font-style: italic;
     font-weight: 400;
+}
+
+.founder-img {
+    align-items: flex-start;
 }
 
 .founder-text {
@@ -265,6 +274,92 @@ p {
     padding: 2rem;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1600px){
+
+    .main-container {
+        max-width: 75vw;
+    }
+    
+    /* NAVBAR */   
+    .menu-item {
+        padding: 10px 14px; 
+        margin: 0;
+    }
+      
+    /* MAIN BANNER */
+    .hero-banner {
+        height: 60rem;  
+    }
+    
+    .hero-action {
+        max-width: 75vw;
+    }
+    
+    /* SERVICES SECTION */
+    .service-container {
+        max-width: 75vw;
+    }
+    
+    .cards-item {
+        padding: 1rem;
+    }
+    
+    .cards-item p {
+        width: 20vw;
+    }
+    
+    .nail-img {
+        width: 20vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .main-container {
+        max-width: 90vw;
+    }
+    
+    /* NAVBAR */   
+    .menu-item {
+        padding: 10px 14px; 
+        margin: 0;
+    }
+    
+    .menu-item a {
+        font-size: 1.3rem;
+    }
+      
+    /* MAIN BANNER */
+    .hero-banner {
+        height: 50rem;  
+    }
+    
+    .hero-action {
+        max-width: 90vw;
+    }
+
+    .hero-action h1 {
+        font-size: 4rem;
+    }
+    
+    /* SERVICES SECTION */
+    .service-container {
+        max-width: 90vw;
+    }
+    
+    .cards-item {
+        padding: 1rem;
+    }
+    
+    .cards-item p {
+        width: 25vw;
+    }
+    
+    .nail-img {
+        width: 25vw;
+    }
+}
+
 @media only screen and (max-width: 767px) {
 
     /* GLOBAL CONFIGURATION */
@@ -279,20 +374,21 @@ p {
 
   .button {
         display: block;
-        width: 90vw;
+        width: 95vw;
         margin: 0 auto;
     } 
 
     .main-container, 
     .service-cards {
         flex-direction: column;
-        width: 32rem;
+        max-width: 95vw;
         margin: 0 auto;
         padding: 2rem 0;
     }
 
     /* NAVBAR */
     .mobile-header {
+        width: 90vw;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -357,11 +453,12 @@ p {
     }
 
     .hero-action {
+        max-width: 90vw;
         text-align: center;
     }
     
     .hero-action h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem;     
     }
 
     /* WELCOME SECTION */
@@ -384,7 +481,7 @@ p {
     }
 
     .vetor {
-        width: 10.6rem;
+        width: 30vw;
         margin: 2rem;
     }
 
@@ -402,22 +499,41 @@ p {
     }
 
     .cards-item {
-        margin-bottom: 1.6rem; 
-        padding: 0 0 2.4rem;
+        margin-bottom: 3rem; 
+        padding: 0;
         border: none;   
+    }
+    
+    .cards-item p {
+        width: 90vw;
+    }
+    
+    .nail-img {
+        width: 80vw;
+        margin-bottom: 0;
     }
 
     .saiba-mais {
         padding: 1.2rem 1.6rem;
-        width: 20rem;
+        width: 60vw;
     }
 
     /* PROFESSIONAL SECTION */
-    .nail-img {
-        margin-bottom: 3rem;
+    .container {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .founder-img {
+        align-items: center;
+    }
+
+    .text-box h3 {
+        margin-top: 3rem;
     }
 
     .text-box p {
+        width: 90vw;
         margin: 1.5rem 0;     
     }
 
@@ -434,6 +550,7 @@ p {
     }
     
     .footer-container {
+        width: 90vw;
         flex-direction: column-reverse;
         align-items: left;
     }
