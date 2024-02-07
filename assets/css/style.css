@@ -12,7 +12,6 @@
 }
 
 /* GLOBAL CONFIGURATION */
-
 html {
     font: 400 62.5% 'Montserrat', sans-serif;
 }
@@ -115,8 +114,7 @@ p {
     background-position: center;
     display: flex;
     padding-bottom: 64px;
-    height: 72.9rem;
-    
+    height: 72.9rem;  
 }
 
 .hero-action {
@@ -229,7 +227,6 @@ p {
     height: 150px;
     gap: 2rem;
     flex: 1;
-
 }
 
 .footer-container p {
@@ -267,8 +264,6 @@ p {
     text-align: center;
     padding: 2rem;
 }
-
-
 
 @media only screen and (max-width: 767px) {
 
@@ -396,8 +391,8 @@ p {
     /* SERVICES SECTION */
     .service-container {
         padding: 3.2rem 0;
-
     }
+
     .desktop-service {
         display: none;
     }
@@ -418,14 +413,12 @@ p {
     }
 
     /* PROFESSIONAL SECTION */
-
     .nail-img {
         margin-bottom: 3rem;
     }
 
     .text-box p {
-        margin: 1.5rem 0;
-       
+        margin: 1.5rem 0;     
     }
 
     /* FOOTER */
