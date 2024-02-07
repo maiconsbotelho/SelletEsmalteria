@@ -7,25 +7,27 @@
         <meta name="author" content="Maicon Botelho">
         <meta name="description" content="Na Séllet oferecemos mais que unhas esmaltadas. Aqui você encontra e faz amigas, toma um mate fresquinho, mas também tem o cafezinho que não pode faltar!">
         <meta name="keywords" content="esmalteria, esmalteria igrejinha, manicure igrejinha, manicure, alongamento de unhas, esmaltação, pedicure">
-        <!-- Google fonts -->
+        <!-- GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <!-- Aplicação Normalize CSS -->
+        <!-- NORMALIZE CSS -->
         <link rel="stylesheet" href="assets/css/normalize.css">
-        <!-- Aplicação de icones ICOMOON -->
+        <!-- ICONS ICOMOON -->
         <link rel="stylesheet" href="assets/icomoon/style.css">
-        <!-- Aplicação CSS -->
+        <!-- CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Aplicação FAV ICON -->
+        <!-- FAV ICON -->
         <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+        <!-- JAVASCRIPT -->
         <script src="assets/js/script.js" defer></script>
     </head>
     <body>
-        <header class="header-container">
-            <nav class="header-nav container-principal">
+        <header class="main-color">
+            <!-- NAVBAR  -->
+            <nav class="main-container mobile-header">
                 <a href="index.html"><img class="nav-logo" src="assets/img/logo.png" alt="logo Séllet esmalteria"></a>
-                <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+                <button class="nav-toggle" onclick="toggleNav(event)"><span class="toggle-icon">&#9776;</span></button>
                 <ul class="nav-menu">
                     <li class="menu-item pagina-atual"><a href="index.html">Página Inicial</a></li>
                     <li class="menu-item"><a href="fotos.html">Galeria</a></li>
@@ -34,19 +36,20 @@
                     <li class="menu-item"><a href="agendamentos.html">Agendamentos</a></li>
                 </ul>
             </nav>
-            <div class="header-banner">
-                <div class="header-action">
+            <!-- MAIN BANNER -->
+            <div class="hero-banner">
+                <div class="hero-action">
                     <h1>Agende já seu horário</h1>
-                    <a href="https://api.whatsapp.com/send?phone=5551999484099">Agende aqui!</a>
+                    <a class="button" href="https://api.whatsapp.com/send?phone=5551999484099">Agende aqui!</a>
                 </div>
             </div>
         </header>
         <main>
-            <!-- SEÇÃO BOAS VINDAS -->
-            <section class="main-container">
-                <div class="container-box container-principal">
-                    <img class="container-vetor" src="assets/img/Vector.svg" alt="desenho de uma mão">
-                    <article class="container-text">
+            <!-- WELCOME SECTION -->
+            <section class="container">
+                <div class="main-container content-box mobile-box">
+                    <img class="vetor" src="assets/img/Vector.svg" alt="desenho de uma mão">
+                    <article class="text-box">
                         <h2>Seja bem vinda!</h2>
                         <p>Na Séllet oferecemos mais que unhas esmaltadas. Aqui você encontra e faz amigas, toma um mate
                             fresquinho, mas também tem o cafezinho que não pode faltar! Venha nos conhecer e entenda porquê
@@ -54,10 +57,11 @@
                     </article>
                 </div>
             </section>
-            <!-- SEÇÃO SERVIÇOS -->
-            <section class="main-service">
+            <!-- SERVICES SECTION -->
+            <section>
                 <div class="service-container">
-                    <h2>Conheça nossos serviços</h2>
+                    <h2 class="desktop-service">Conheça nossos serviços</h2>
+                    <h2 class="mobile-service">Serviços</h2>
                     <div class="service-cards">
                         <article class="cards-item">
                             <h3>Esmaltação Tradicional</h3>
@@ -77,21 +81,21 @@
                                 natural. Resultando em unhas fortes e do tamanho desejado</p>
                         </article>
                     </div>
-                    <a class="saiba-mais" href="https://api.whatsapp.com/send?phone=5551999484099">Saiba mais</a>
+                    <a class="button saiba-mais" href="https://api.whatsapp.com/send?phone=5551999484099">Saiba mais</a>
                 </div>
             </section>
-            <!-- SEÇÃO PROFISSIONAL -->
-            <section class="main-container">
+            <!-- PROFESSIONAL SECTION -->
+            <section class="container">
                 <h2>Profissional Titular</h2>
-                <div class="container-box container-principal">
-                    <img class="container-perfil" src="assets/img/perfil1.jpg" alt="foto de perfil Fernanda Telles">
-                    <article class="container-text">
-                        <h3>Fernanda Telles<span class="fundadora"> - Fundadora</span></h3>
-                        <p class="fundadora-perfil">Iniciei minha jornada aos 15 anos, quando queria seguir minha carreira
+                <div class="content-box main-container">
+                    <img class="nail-img" src="assets/img/perfil1.jpg" alt="foto de perfil Fernanda Telles">
+                    <article class="text-box">
+                        <h3>Fernanda Telles<span class="founder"> - Fundadora</span></h3>
+                        <p class="founder-text">Iniciei minha jornada aos 15 anos, quando queria seguir minha carreira
                             na área da beleza, como cabeleireira. Por motivos de falta de espaço no salão da minha mãe, a
                             proposta foi preencher a vaga de manicure temporariamente. Neste desvio de rota encontrei minha
                             paixão nas unhas. </p>
-                        <p class="fundadora-perfil">Após aprender os primeiros passos, minha vocação pela profissão se
+                        <p class="founder-text">Após aprender os primeiros passos, minha vocação pela profissão se
                             consolidou e ao longo desses anos, minha dedicação para atingir a excelência em meu trabalho só
                             aumentou. Hoje, com <strong>16 anos de experiência</strong>, tenho muito orgulho de ser a
                             Fernanda Telles, a
@@ -100,31 +104,33 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="container-principal container-box container-footer">
+        <footer class="main-color">
+            <div class="main-container mobile-footer">
                 <img class="nav-logo" src="assets/img/logoLL.png" alt="logo séllet esmalteria versão LL">
-                <address class="container-principal container-footer">
-                    <!-- CONTATOS -->
+                <address class="main-container footer-container">
+                    <!-- CONTACTS -->
                     <div>
-                        <div class="container-principal">
+                        <div class="main-container mobile-icon">
                             <svg class="icon icon-envelop"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-envelop"></use></svg>
                             <p>contato@selletesmalteria.com.br</p>
                         </div>
-                        <div class="container-principal">
+                        <div class="main-container mobile-icon">
                             <svg class="icon icon-whatsapp"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-whatsapp"></use></svg>
                             <p>(51) 99948.4099</p>
                         </div>
                     </div>
-                    <!-- ICONES SOCIAIS -->
-                    <div class="icon-circle">
-                        <a href="https://www.instagram.com/sellet_esmalteria/" target="_blank">
-                            <svg class="icon icon-instagram"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-instagram"></use></svg>
-                        </a>
-                    </div>
-                    <div class="icon-circle">
-                        <a href="https://www.facebook.com/sellet.esmalteria" target="_blank">
-                            <svg class="icon icon-facebook2"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-facebook2"></use></svg>
-                        </a>
+                    <!-- SOCIAL ICONS -->
+                    <div class="icon-footer">
+                        <div class="icon-circle">
+                            <a href="https://www.instagram.com/sellet_esmalteria/" target="_blank">
+                                <svg class="icon icon-instagram"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-instagram"></use></svg>
+                            </a>
+                        </div>
+                        <div class="icon-circle">
+                            <a href="https://www.facebook.com/sellet.esmalteria" target="_blank">
+                                <svg class="icon icon-facebook2"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-facebook2"></use></svg>
+                            </a>
+                        </div>
                     </div>
                 </address>
             </div>

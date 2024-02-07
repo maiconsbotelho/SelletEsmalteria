@@ -1,4 +1,4 @@
-/* Definição de variáveis de cor e espaçamento global */
+/* VARIABLES AND GLOBAL SPACING */
 :root {
     --primary-color: #76253C;
     --secondary-color: #FFCCB9;
@@ -11,12 +11,14 @@
     box-sizing: border-box;
 }
 
+/* GLOBAL CONFIGURATION */
+
 html {
     font: 400 62.5% 'Montserrat', sans-serif;
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: #fff;
 }
 
 h2 {
@@ -37,20 +39,34 @@ p {
     line-height: 2.5rem;
 }
 
-.container-principal {
+.main-container {
     display: flex;
     align-items: center;
     max-width: 113.4rem;
     margin: 0 auto;
 }
 
+.button {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    padding: 16px 59px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    border-radius: 8px;
+    background: #903B53;
+}
+
+.main-color {
+    background-color: #76253C;
+}
+
 /* NAVBAR */
 .nav-logo {
     width: 12.9rem;
-}
-
-.menu-toggle {
-    display: none;
 }
 
 .nav-menu {
@@ -85,8 +101,14 @@ p {
     font-size: 1.6rem;
 }
 
-/* BANNER PRINCIPAL */
-.header-banner {
+/* TOGGLE BUTTON */
+.nav-toggle,
+.toggle-icon {
+    display: none;
+}
+
+/* MAIN BANNER */
+.hero-banner {
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,44 +116,28 @@ p {
     display: flex;
     padding-bottom: 64px;
     height: 72.9rem;
+    
 }
 
-.header-banner > * {
-    flex: 1;
-}
-
-.header-action {
+.hero-action {
     max-width: 113.4rem;
     margin: 0 auto;
     align-self: flex-end;
+    flex: 1;
 }
 
-.header-action h1 {
+.hero-action h1 {
     color: var(--secondary-color);
     font-size: 5rem;
 }
 
-.header-action a {
-    background-color: var(--primary-color);
-    padding: 16px 59px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.6rem;
-}
-
-.header-action a:hover {
-    border-radius: 8px;
-    background: #903B53;
-}
-
-/* SEÇÃO BOAS VINDAS */
-.main-container {
+/* WELCOME SECTION */
+.container {
     background-color: var(--optional-color);
     padding: 64px 0px;
 }
 
-.container-box {
+.content-box {
     gap: 1.6rem;
     flex: 1;
     margin-left: auto;
@@ -139,25 +145,17 @@ p {
     justify-content: space-between;
 }
 
-.container-vetor {
-    width: 19.8rem;
-    height: 16.7rem;
-}
-
-.container-text h2 {
+.text-box h2 {
     margin-bottom: 2rem;
     text-align: right;
+    padding: 0;
 }
 
-.container-text p {
+.text-box p {
     max-width: 84.6rem;
 }
 
-/* SEÇÃO SERVIÇOS */
-.main-service {
-    background-color: #ffffff;
-}
-
+/* SERVICES SECTION */
 .service-container {
     max-width: 113.4rem;
     margin: 0 auto;
@@ -165,9 +163,11 @@ p {
     padding: 64px 0px;
 }
 
+.mobile-service {
+    display: none;
+}
+
 .service-cards {
-    max-width: 113.4rem;
-    margin: 0 auto;
     padding: 64px 0px;
     display: flex;
     gap: 1.6rem;
@@ -185,50 +185,43 @@ p {
 }
 
 .cards-item p {
-    width: 30rem;
+    width: 28rem;
 }
 
 .nail-img {
     width: 26rem;
-}
-
-.container-perfil {
-    width: 25rem;
     border-radius: 10px;
 }
 
 .saiba-mais {
-    text-decoration: none;
     color: var(--primary-color);
-    font-size: 1.8rem;
+    background-color: #ffffff;
     font-weight: bold;
-    border-radius: 8px;
     border: 2px solid var(--primary-color);
-    padding: 16px 59px;
 }
 
 .saiba-mais:hover {
     background-color: rgba(192, 142, 156, 42%);
 }
 
-/* PROFISSIONAL TITULAR */
-.container-text h3 {
+/* PROFESSIONAL SECTION */
+.text-box h3 {
     text-align: left;
 }
 
-.fundadora {
+.founder {
     color: #797979;
     font-style: italic;
     font-weight: 400;
 }
 
-.fundadora-perfil {
+.founder-text {
     text-align: left;
     margin: 1rem 0;
 }
 
 /* FOOTER */
-.container-footer {
+.footer-container {
     color: #ffffff;
     justify-content: flex-end;
     align-items: flex-start;
@@ -236,9 +229,10 @@ p {
     height: 150px;
     gap: 2rem;
     flex: 1;
+
 }
 
-.container-footer p {
+.footer-container p {
     font-size: 1.2rem;
     margin: .5rem;
     color: #ffffff;
@@ -277,6 +271,8 @@ p {
 
 
 @media only screen and (max-width: 767px) {
+
+    /* GLOBAL CONFIGURATION */
     body {
         font-size: 1.6rem;
     }
@@ -286,14 +282,24 @@ p {
         padding: 1rem;
     }
 
-    .container-principal, 
+  .button {
+        display: block;
+        width: 90vw;
+        margin: 0 auto;
+    } 
+
+    .main-container, 
     .service-cards {
         flex-direction: column;
+        width: 32rem;
+        margin: 0 auto;
+        padding: 2rem 0;
     }
 
-    .header-nav {
-        display: flex;
-        background-color: #f8e00b;
+    /* NAVBAR */
+    .mobile-header {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .nav-logo {
@@ -302,75 +308,159 @@ p {
 
     .nav-menu {
         display: none;
-        flex-direction: column;
     }
 
-    .menu-toggle {
+    .nav-menu.open {
+        height: auto;
+        width: 100vw;
+        display: block;
+        color: var(--primary-color);
+        background-color: #ffffff;
+        border: .1rem solid #ccc;
+        position: absolute; 
+        top: 7.8rem; 
+        left: 0; 
+        z-index: 999; 
+    }
+
+    /* TOGGLE BUTTON */
+    .toggle-icon {
+        display: inline-block;
+        font-size: 2.4rem; 
+        color: var(--secondary-color); 
+    }
+    
+    .nav-toggle {
         display: block;
         background: none;
         border: none;
         cursor: pointer;
     }
 
-    .menu-toggle:hover {
-        text-decoration: underline;
+    .nav-toggle.open .toggle-icon {
+        display: inline-block; 
     }
 
-    .menu-item {
+    .menu-item,
+    .menu-item.pagina-atual {
+        margin: 2rem;
+    }
+
+    .menu-item:not(:last-child),
+    .menu-item.pagina-atual:not(:last-child) {
+        border-bottom: 2px solid #D9D9D9;
+    }
+    
+    .menu-item a {
+        color: var(--primary-color);
+    }
+
+    /* MAIN BANNER */
+    .hero-banner {
+        height: 33.6rem;
+        padding-bottom: 3.2rem;
+    }
+
+    .hero-action {
+        text-align: center;
+    }
+    
+    .hero-action h1 {
+        font-size: 2.5rem;
+    }
+
+    /* WELCOME SECTION */
+    .container {
+        padding: 4rem 0;
+    }
+
+    .mobile-box {      
+        flex-direction: column-reverse;
+    }
+
+    .text-box h2 {
+        margin-bottom: 3rem;
         text-align: center;
     }
 
-
-
-    .header-banner {
-        height: 336px;
-        padding-bottom: 32px;
+    .text-box p {
+        margin: 3rem auto;
+        text-align: left;
     }
 
-    .header-action h1 {
-        font-size: 3rem;
+    .vetor {
+        width: 10.6rem;
+        margin: 2rem;
     }
 
-    .header-action a {
-        padding: 12px 36px;
+    /* SERVICES SECTION */
+    .service-container {
+        padding: 3.2rem 0;
+
+    }
+    .desktop-service {
+        display: none;
     }
 
-    .main-container {
-        padding: 32px 16px; /* Ajusta o espaçamento na seção de boas-vindas */
-    }
-
-    .container-box {
-        text-align: center; /* Centraliza o conteúdo da seção de boas-vindas */
-    }
-
-    .container-text h2 {
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
-    .service-container,
-    .service-cards {
-        padding: 32px 16px;
+    .mobile-service {
+        display: block;
     }
 
     .cards-item {
-        width: 100%; /* Certifica-se de que os cards ocupem a largura total */
-        margin-bottom: 16px; /* Adiciona um espaçamento entre os cards */
+        margin-bottom: 1.6rem; 
+        padding: 0 0 2.4rem;
+        border: none;   
     }
 
-    .container-footer {
-        flex-direction: column;
-        align-items: center;
+    .saiba-mais {
+        padding: 1.2rem 1.6rem;
+        width: 20rem;
+    }
+
+    /* PROFESSIONAL SECTION */
+
+    .nail-img {
+        margin-bottom: 3rem;
+    }
+
+    .text-box p {
+        margin: 1.5rem 0;
+       
+    }
+
+    /* FOOTER */
+    .mobile-footer {
+        flex-direction: column-reverse;
+    } 
+
+    .icon-footer  {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        gap: 1rem; 
+    }
+    
+    .footer-container {
+        flex-direction: column-reverse;
+        align-items: left;
+    }
+
+    .mobile-icon {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .icon-circle {
+        width: 4.8rem;
         text-align: center;
-        height: auto;
+    }
+    
+    .footer-container p {
+        font-size: 1.2rem;
+        color: #ffffff;
+    }
+
+    .direitos-autorais {
+        font-size: 1rem;
     }
 }
-
-
-
-
-
-
-
-
-
