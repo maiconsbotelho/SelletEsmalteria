@@ -50,21 +50,21 @@ function fecharMenuFora(e) {
 document.addEventListener('click', fecharMenuFora);
 
 // CAROUSEL SECTION
-$('.slider').slick({
+$('.slider-content').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: 'linear',
     arrows: false,
     fade: true,
-    asNavFor: '.carousel'
+    asNavFor: '.carousel-content'
 });
 
-$('.carousel').slick({
+$('.carousel-content').slick({
     dots: false,
     infinite: true,
     focusOnSelect: true,
     lazyLoad: 'ondemand',
-    asNavFor: '.slider',
+    asNavFor: '.slider-content',
     centerPadding: '10px',
     speed: 300,
     slidesToShow: 4,
