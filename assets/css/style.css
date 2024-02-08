@@ -25,9 +25,9 @@ h2 {
     font-size: 3.2rem;
     padding: 2rem;
     text-align: center;
-} 
+}
 
-h3{
+h3 {
     color: var(--primary-color);
     font-size: 1.6rem;
 }
@@ -79,11 +79,11 @@ p {
 .menu-item {
     list-style: none;
     margin-right: 1rem;
-    padding: 16px 24px; 
+    padding: 16px 24px;
 }
 
 .menu-item:hover,
-.menu-item:active, 
+.menu-item:active,
 .menu-item:focus-within {
     border-radius: 8px 8px 0px 0px;
     border-bottom: 2px solid #FFF;
@@ -114,8 +114,44 @@ p {
     background-position: center;
     display: flex;
     padding-bottom: 64px;
-    height: 72.9rem;  
+    height: 72.9rem;
     justify-content: center;
+}
+
+/* BANNER GALERIA */
+.hero-banner-galeria {
+    background-image: url(../img/banner-galeria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-bottom: 64px;
+    height: 38rem;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-banner-galeria::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Ajuste a opacidade conforme necessário */
+    z-index: 1;
+    /* Certifique-se de que o overlay esteja acima da imagem de fundo */
+}
+
+
+.hero-titulo {
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    font-size: 1.7rem;
+    color: #ffffff;
 }
 
 .hero-action {
@@ -123,6 +159,7 @@ p {
     margin: 0 auto;
     align-self: flex-end;
     flex: 1;
+    z-index: 2;
 }
 
 .hero-action h1 {
@@ -157,6 +194,82 @@ p {
 .text-box p {
     max-width: 84.6rem;
 }
+
+
+
+/* -=============== GALLERY  ==================================== */
+
+
+
+/* BEFORE X AFTER */
+.before-after {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.before-photo {
+    max-width: 42rem;
+    margin-right: 2rem;
+}
+.before-photo img{
+    width: 42rem;
+    border-radius: 10px;
+}
+
+.before-photo h3 {
+    margin-top: 1rem;  
+    text-align: left;
+}
+
+.before-photo p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.after-photo img{
+    width: 55rem;
+    border-radius: 10px;
+}
+
+.after-photo h3 {
+    margin-top: 1rem;
+    text-align: right;
+    margin-bottom: 6rem;
+}
+
+/* CAROUSEL */
+.slick-prev:before,
+.slick-next:before {
+    color: var(--primary-color);
+}
+
+.slider-container {
+    max-width: 55vw;
+    margin: 5rem auto;
+}
+
+.slider img{
+    width: 50rem;
+    border-radius: 10px;
+    margin: 5rem auto;
+}
+
+.carousel {
+    max-width: 40vw;
+    margin: 0 auto; 
+} 
+
+.carousel img {
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+
+/* ========================================================= */
+
 
 /* SERVICES SECTION */
 .service-container {
@@ -254,11 +367,11 @@ p {
     font-size: 3rem;
     color: var(--primary-color);
     padding: .3rem;
-} 
+}
 
 .icon-facebook2 {
     border-radius: 10rem;
-} 
+}
 
 .icon-circle {
     background-color: var(--secondary-color);
@@ -274,66 +387,66 @@ p {
     padding: 2rem;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1600px){
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
 
     .main-container {
         max-width: 75vw;
     }
-    
-    /* NAVBAR */   
+
+    /* NAVBAR */
     .menu-item {
-        padding: 10px 14px; 
+        padding: 10px 14px;
         margin: 0;
     }
-      
+
     /* MAIN BANNER */
     .hero-banner {
-        height: 60rem;  
+        height: 60rem;
     }
-    
+
     .hero-action {
         max-width: 75vw;
     }
-    
+
     /* SERVICES SECTION */
     .service-container {
         max-width: 75vw;
     }
-    
+
     .cards-item {
         padding: 1rem;
     }
-    
+
     .cards-item p {
         width: 20vw;
     }
-    
+
     .nail-img {
         width: 20vw;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .main-container {
         max-width: 90vw;
     }
-    
-    /* NAVBAR */   
+
+    /* NAVBAR */
     .menu-item {
-        padding: 10px 14px; 
+        padding: 10px 14px;
         margin: 0;
     }
-    
+
     .menu-item a {
         font-size: 1.3rem;
     }
-      
+
     /* MAIN BANNER */
     .hero-banner {
-        height: 50rem;  
+        height: 50rem;
     }
-    
+
     .hero-action {
         max-width: 90vw;
     }
@@ -341,20 +454,20 @@ p {
     .hero-action h1 {
         font-size: 4rem;
     }
-    
+
     /* SERVICES SECTION */
     .service-container {
         max-width: 90vw;
     }
-    
+
     .cards-item {
         padding: 1rem;
     }
-    
+
     .cards-item p {
         width: 25vw;
     }
-    
+
     .nail-img {
         width: 25vw;
     }
@@ -372,13 +485,13 @@ p {
         padding: 1rem;
     }
 
-  .button {
+    .button {
         display: block;
         width: 80vw;
         margin: 0 auto;
-    } 
+    }
 
-    .main-container, 
+    .main-container,
     .service-cards {
         flex-direction: column;
         max-width: 95vw;
@@ -408,19 +521,19 @@ p {
         color: var(--primary-color);
         background-color: #ffffff;
         border: .1rem solid #ccc;
-        position: absolute; 
-        top: 7.8rem; 
-        left: 0; 
-        z-index: 999; 
+        position: absolute;
+        top: 7.8rem;
+        left: 0;
+        z-index: 999;
     }
 
     /* TOGGLE BUTTON */
     .toggle-icon {
         display: inline-block;
-        font-size: 2.4rem; 
-        color: var(--secondary-color); 
+        font-size: 2.4rem;
+        color: var(--secondary-color);
     }
-    
+
     .nav-toggle {
         display: block;
         background: none;
@@ -429,7 +542,7 @@ p {
     }
 
     .nav-toggle.open .toggle-icon {
-        display: inline-block; 
+        display: inline-block;
     }
 
     .menu-item,
@@ -441,7 +554,7 @@ p {
     .menu-item.pagina-atual:not(:last-child) {
         border-bottom: 2px solid #D9D9D9;
     }
-    
+
     .menu-item a {
         color: var(--primary-color);
     }
@@ -450,19 +563,33 @@ p {
     .hero-banner {
         height: 33.6rem;
         padding-bottom: 3.2rem;
+        position: relative;
+    }
+
+    .hero-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        /* Ajuste a opacidade conforme necessário */
+        z-index: 1;
+        /* Certifique-se de que o overlay esteja acima da imagem de fundo */
     }
 
     .hero-action {
         max-width: 90vw;
         text-align: center;
     }
-    
+
     .hero-action h1 {
-        font-size: 2.5rem;     
+        font-size: 2.5rem;
     }
 
     /* WELCOME SECTION */
-    .mobile-box {      
+    .mobile-box {
         flex-direction: column-reverse;
     }
 
@@ -495,15 +622,15 @@ p {
     }
 
     .cards-item {
-        margin-bottom: 3rem; 
+        margin-bottom: 3rem;
         padding: 0;
-        border: none;   
+        border: none;
     }
-    
+
     .cards-item p {
         width: 90vw;
     }
-    
+
     .nail-img {
         width: 80vw;
         margin-bottom: 0;
@@ -525,21 +652,21 @@ p {
 
     .text-box p {
         width: 90vw;
-        margin: 1.5rem 0;     
+        margin: 1.5rem 0;
     }
 
     /* FOOTER */
     .mobile-footer {
         flex-direction: column-reverse;
-    } 
+    }
 
-    .icon-footer  {
+    .icon-footer {
         display: flex;
         flex-direction: row;
         align-items: left;
-        gap: 1rem; 
+        gap: 1rem;
     }
-    
+
     .footer-container {
         width: 90vw;
         flex-direction: column-reverse;
@@ -555,7 +682,7 @@ p {
         width: 4.8rem;
         text-align: center;
     }
-    
+
     .footer-container p {
         font-size: 1.2rem;
         color: #ffffff;
