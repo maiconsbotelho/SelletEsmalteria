@@ -1,5 +1,6 @@
+// TOGGLE MENU
 function toggleNav(event) {
-    event.stopPropagation(); // Impede a propagação do evento
+    event.stopPropagation(); 
     var navMenu = document.querySelector('.nav-menu');
     navMenu.classList.toggle('open');
 
@@ -8,9 +9,9 @@ function toggleNav(event) {
 
     var toggleIcon = navToggle.querySelector('.toggle-icon');
     if (navToggle.classList.contains('open')) {
-        toggleIcon.textContent = '✕'; // Altera o conteúdo para "x" quando o menu é aberto
+        toggleIcon.textContent = '✕'; 
     } else {
-        toggleIcon.textContent = '☰'; // Altera o conteúdo para o ícone original quando o menu é fechado
+        toggleIcon.textContent = '☰';
     }
 }
 
@@ -32,63 +33,70 @@ window.addEventListener('resize', function () {
     }
 });
 
-// Função para fechar o menu quando o usuário clica fora dele
+// Fechar o menu quando o usuário clicar fora dele
 function fecharMenuFora(e) {
     var navMenu = document.querySelector('.nav-menu');
     if (!navMenu.contains(e.target)) {
-        // Se o clique ocorreu fora do menu, feche o menu
         navMenu.classList.remove('open');
 
         // Atualiza o ícone do botão toggle
         var navToggle = document.querySelector('.nav-toggle');
         var toggleIcon = navToggle.querySelector('.toggle-icon');
-        toggleIcon.textContent = '☰'; // Altera o conteúdo para o ícone de hamburguer
+        toggleIcon.textContent = '☰';
     }
 }
 
 // Adiciona um ouvinte de evento de clique ao documento inteiro
 document.addEventListener('click', fecharMenuFora);
 
-
-// GALERIA
+// CAROUSEL SECTION
 $('.slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    cssEase: 'linear',
     arrows: false,
     fade: true,
     asNavFor: '.carousel'
 });
 
 $('.carousel').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider',
-    speed: 300,
-    dots: true,
+    dots: false,
     infinite: true,
-    centerMode: true,
     focusOnSelect: true,
+    lazyLoad: 'ondemand',
+    asNavFor: '.slider',
+    centerPadding: '10px',
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1600,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: false
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 1024,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
             }
         },
         {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         }

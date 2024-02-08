@@ -1,185 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <title>Sellet - Galeria</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Maicon Botelho">
-    <meta name="description"
-        content="Na Séllet oferecemos mais que unhas esmaltadas. Aqui você encontra e faz amigas, toma um mate fresquinho, mas também tem o cafezinho que não pode faltar!">
-    <meta name="keywords"
-        content="esmalteria, esmalteria igrejinha, manicure igrejinha, manicure, alongamento de unhas, esmaltação, pedicure">
-    <!-- FAV ICON -->
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- NORMALIZE CSS -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <!-- ICONS ICOMOON -->
-    <link rel="stylesheet" href="assets/icomoon/style.css">
-    <!-- SLICK CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick-theme.css" />
-    <!-- JQUERY -->
-    <script type="text/javascript" src="assets/js/jquery.js" defer></script>
-    <!-- SLICK JS -->
-    <script type="text/javascript" src="assets/slick/slick/slick.min.js" defer></script>
-    <!-- MY -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js" defer></script>
+    <head>
+        <title>Sellet - Galeria</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Maicon Botelho">
+        <meta name="description"
+            content="Na Séllet oferecemos mais que unhas esmaltadas. Aqui você encontra e faz amigas, toma um mate fresquinho, mas também tem o cafezinho que não pode faltar!">
+        <meta name="keywords"
+            content="esmalteria, esmalteria igrejinha, manicure igrejinha, manicure, alongamento de unhas, esmaltação, pedicure">
+        <!-- FAV ICON -->
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <!-- NORMALIZE CSS -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <!-- ICONS ICOMOON -->
+        <link rel="stylesheet" href="assets/icomoon/style.css">
+        <!-- SLICK CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick/slick-theme.css" />
+        <!-- JQUERY -->
+        <script type="text/javascript" src="assets/js/jquery.js" defer></script>
+        <!-- SLICK JS -->
+        <script type="text/javascript" src="assets/slick/slick/slick.min.js" defer></script>
+        <!-- MY -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js" defer></script>
+    </head>
 
-
-
-</head>
-
-<body>
-    <header class="main-color">
-        <!-- NAVBAR  -->
-        <nav class="main-container mobile-header">
-            <a href="index.html"><img class="nav-logo" src="assets/img/logo.png" alt="logo Séllet esmalteria"></a>
-            <button class="nav-toggle" onclick="toggleNav(event)"><span class="toggle-icon">&#9776;</span></button>
-            <ul class="nav-menu">
-                <li class="menu-item"><a href="index.html">Página Inicial</a></li>
-                <li class="menu-item pagina-atual"><a href="galeria.html">Galeria</a></li>
-                <li class="menu-item"><a href="pacotes.html">Pacotes</a></li>
-                <li class="menu-item"><a href="sobre.html">Quem Somos</a></li>
-                <li class="menu-item"><a href="agendamentos.html">Agendamentos</a></li>
-            </ul>
-        </nav>
-        <!-- MAIN BANNER -->
-        <div class="hero-banner-galeria">
-            <div class="hero-action">
-                <h1 class="hero-titulo">Nossa galeria de fotos</h1>
-                <p class="hero-text">Conheça um pouco do nosso trabalho</p>
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- WELCOME SECTION -->
-        <section class="container">
-            <div class="service-container">
-                <h2 class="desktop-service">Antes X Depois</h2>
-                <div class="before-after">
-                    <article class="before-photo">                     
-                        <img src="assets/img/galeria/antes.jpg" alt="Fotos do antes">
-                        <h3>Antes</h3>
-                        <p>Unhas fracas, porém compridas, a esmaltação em gel traz a força que elas precisam</p>
-                    </article>
-                    <article class="after-photo">                       
-                        <img src="assets/img/galeria/depois.jpg" alt="Foto do depois">
-                        <h3>Depois</h3>
-                    </article>
-                
-                </div>
-                <a class="button" href="https://api.whatsapp.com/send?phone=5551999484099">Agendar horário</a>
-            </div>
-        </section>
-
-
-
-
-        <!-- SERVICES SECTION -->
-        <section class="main-container">
-            <div class="slider-container">
-                <h2>Galeria</h2>
-                <div class="slider">
-                    <div><img src="assets/img/galeria/nail/nail1.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail2.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail3.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail4.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail5.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail6.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail7.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail8.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail9.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail10.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail11.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail12.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail13.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail14.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail15.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail16.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail17.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail18.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail19.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail20.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail21.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/nail/nail22.jpg" alt=""></div>
-                </div>
-
-                <div class="carousel">
-                    <div><img src="assets/img/galeria/thumb/nail1_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail2_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail3_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail4_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail5_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail6_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail7_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail8_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail9_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail10_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail11_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail12_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail13_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail14_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail15_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail16_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail17_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail18_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail19_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail20_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail21_thumb.jpg" alt=""></div>
-                    <div><img src="assets/img/galeria/thumb/nail22_thumb.jpg" alt=""></div>
-
+    <body>
+        <header class="main-color">
+            <!-- NAVBAR  -->
+            <nav class="main-container mobile-header">
+                <a href="index.html"><img class="nav-logo" src="assets/img/logo.png" alt="logo Séllet esmalteria"></a>
+                <button class="nav-toggle" onclick="toggleNav(event)"><span class="toggle-icon">&#9776;</span></button>
+                <ul class="nav-menu">
+                    <li class="menu-item"><a href="index.html">Página Inicial</a></li>
+                    <li class="menu-item pagina-atual"><a href="galeria.html">Galeria</a></li>
+                    <li class="menu-item"><a href="pacotes.html">Pacotes</a></li>
+                    <li class="menu-item"><a href="sobre.html">Quem Somos</a></li>
+                    <li class="menu-item"><a href="agendamentos.html">Agendamentos</a></li>
+                </ul>
+            </nav>
+            <!-- MAIN BANNER -->
+            <div class="hero-banner-pages">
+                <div class="hero-action">
+                    <h1 class="hero-titulo">Nossa galeria de fotos</h1>
+                    <p class="hero-text">Conheça um pouco do nosso trabalho</p>
                 </div>
             </div>
-            
-        </section>
-       
-    </main>
-    <footer class="main-color">
-        <div class="main-container mobile-footer">
-            <img class="nav-logo" src="assets/img/logoLL.png" alt="logo séllet esmalteria versão LL">
-            <address class="main-container footer-container">
-                <!-- CONTACTS -->
-                <div>
-                    <div class="main-container mobile-icon">
-                        <svg class="icon icon-envelop">
-                            <use xlink:href="assets/icomoon/symbol-defs.svg#icon-envelop"></use>
-                        </svg>
-                        <p>contato@selletesmalteria.com.br</p>
+        </header>
+        <main>
+            <!-- GALLERY SECTION -->
+            <section class="container">
+                <div class="main-gallery">
+                    <h2>Antes X Depois</h2>
+                    <div class="gallery-container">
+                        <div class="gallery-content">
+                            <article class="before-photo">
+                                <img src="assets/img/galeria/antes.jpg" alt="Fotos do antes">
+                                <h3>Antes</h3>
+                                <p class="before-text-desktop">Unhas fracas, porém compridas, a esmaltação em gel traz a
+                                    força que elas precisam</p>
+                            </article>
+                            <article class="after-photo">
+                                <img src="assets/img/galeria/depois.jpg" alt="Foto do depois">
+                                <h3>Depois</h3>
+                            </article>
+                        </div>
+                        <p class="before-text-mobile">Unhas fracas, porém compridas, a esmaltação em gel traz a força que
+                            elas precisam</p>
                     </div>
-                    <div class="main-container mobile-icon">
-                        <svg class="icon icon-whatsapp">
-                            <use xlink:href="assets/icomoon/symbol-defs.svg#icon-whatsapp"></use>
-                        </svg>
-                        <p>(51) 99948.4099</p>
+                    <a class="button" href="https://api.whatsapp.com/send?phone=5551999484099">Agendar horário</a>
+                </div>
+            </section>
+            <!-- CAROUSEL SECTION -->
+            <section class="main-container">
+                <div class="carousel-container">
+                    <h2>Galeria</h2>
+                    <div class="slider-content">
+                        <div><img src="assets/img/galeria/nail/nail1.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail2.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail3.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail4.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail5.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail6.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail7.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail8.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail9.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail10.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail11.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail12.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail13.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail14.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail15.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail16.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail17.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail18.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail19.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail20.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail21.jpg" alt=""></div>
+                        <div><img src="assets/img/galeria/nail/nail22.jpg" alt=""></div>
+                    </div>
+                    <div class="carousel-content">
+                        <div><img data-lazy="assets/img/galeria/thumb/nail1_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail2_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail3_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail4_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail5_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail6_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail7_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail8_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail9_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail10_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail11_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail12_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail13_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail14_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail15_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail16_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail17_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail18_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail19_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail20_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail21_thumb.jpg" alt=""></div>
+                        <div><img data-lazy="assets/img/galeria/thumb/nail22_thumb.jpg" alt=""></div>
                     </div>
                 </div>
-                <!-- SOCIAL ICONS -->
-                <div class="icon-footer">
-                    <div class="icon-circle">
-                        <a href="https://www.instagram.com/sellet_esmalteria/" target="_blank">
-                            <svg class="icon icon-instagram">
-                                <use xlink:href="assets/icomoon/symbol-defs.svg#icon-instagram"></use>
+            </section>
+        </main>
+        <footer class="main-color">
+            <div class="main-container mobile-footer">
+                <img class="nav-logo" src="assets/img/logoLL.png" alt="logo séllet esmalteria versão LL">
+                <address class="main-container footer-container">
+                    <!-- CONTACTS -->
+                    <div>
+                        <div class="main-container mobile-icon">
+                            <svg class="icon icon-envelop">
+                                <use xlink:href="assets/icomoon/symbol-defs.svg#icon-envelop"></use>
                             </svg>
-                        </a>
-                    </div>
-                    <div class="icon-circle">
-                        <a href="https://www.facebook.com/sellet.esmalteria" target="_blank">
-                            <svg class="icon icon-facebook2">
-                                <use xlink:href="assets/icomoon/symbol-defs.svg#icon-facebook2"></use>
+                            <p>contato@selletesmalteria.com.br</p>
+                        </div>
+                        <div class="main-container mobile-icon">
+                            <svg class="icon icon-whatsapp">
+                                <use xlink:href="assets/icomoon/symbol-defs.svg#icon-whatsapp"></use>
                             </svg>
-                        </a>
+                            <p>(51) 99948.4099</p>
+                        </div>
                     </div>
-                </div>
-            </address>
-        </div>
-        <p class="direitos-autorais">Copyright &copy; 2024 Séllet Esmalteria | Powered by Séllet Esmalteria</p>
-    </footer>
-</body>
-
+                    <!-- SOCIAL ICONS -->
+                    <div class="icon-footer">
+                        <div class="icon-circle">
+                            <a href="https://www.instagram.com/sellet_esmalteria/" target="_blank">
+                                <svg class="icon icon-instagram">
+                                    <use xlink:href="assets/icomoon/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="icon-circle">
+                            <a href="https://www.facebook.com/sellet.esmalteria" target="_blank">
+                                <svg class="icon icon-facebook2">
+                                    <use xlink:href="assets/icomoon/symbol-defs.svg#icon-facebook2"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </address>
+            </div>
+            <p class="direitos-autorais">Copyright &copy; 2024 Séllet Esmalteria | Powered by Séllet Esmalteria</p>
+        </footer>
+    </body>
 </html>

@@ -118,8 +118,8 @@ p {
     justify-content: center;
 }
 
-/* BANNER GALERIA */
-.hero-banner-galeria {
+/* PAGES BANNER */
+.hero-banner-pages {
     background-image: url(../img/banner-galeria.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,7 +131,7 @@ p {
     position: relative;
 }
 
-.hero-banner-galeria::before {
+.hero-banner-pages::before {
     content: "";
     position: absolute;
     top: 0;
@@ -139,11 +139,8 @@ p {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Ajuste a opacidade conforme necessário */
     z-index: 1;
-    /* Certifique-se de que o overlay esteja acima da imagem de fundo */
 }
-
 
 .hero-titulo {
     margin-bottom: 1rem;
@@ -195,14 +192,18 @@ p {
     max-width: 84.6rem;
 }
 
+/* GALLERY SECTION */
+.main-gallery {
+    text-align: center;
+}
 
+.gallery-container {
+    max-width: 55vw;
+    margin: 0 auto;
+    text-align: center;
+}
 
-/* -=============== GALLERY  ==================================== */
-
-
-
-/* BEFORE X AFTER */
-.before-after {
+.gallery-content {
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -210,27 +211,32 @@ p {
 }
 
 .before-photo {
-    max-width: 42rem;
+    max-width: 22vw;
     margin-right: 2rem;
 }
-.before-photo img{
-    width: 42rem;
+
+.before-photo img {
+    max-width: 22vw;
     border-radius: 10px;
 }
 
 .before-photo h3 {
-    margin-top: 1rem;  
+    margin-top: 1rem;
     text-align: left;
 }
 
-.before-photo p {
+.before-text-mobile {
+    display: none;
+}
+
+.before-photo .before-text-desktop {
     margin-top: 1rem;
     font-size: 2rem;
     text-align: left;
 }
 
-.after-photo img{
-    width: 55rem;
+.after-photo img {
+    max-width: 28vw;
     border-radius: 10px;
 }
 
@@ -240,36 +246,41 @@ p {
     margin-bottom: 6rem;
 }
 
-/* CAROUSEL */
+/* CAROUSEL SECTION */
+.slick-slide {
+    text-align: center;
+}
+
 .slick-prev:before,
 .slick-next:before {
     color: var(--primary-color);
 }
 
-.slider-container {
+.carousel-container {
     max-width: 55vw;
     margin: 5rem auto;
 }
 
-.slider img{
-    width: 50rem;
-    border-radius: 10px;
-    margin: 5rem auto;
+.carousel-container h2 {
+    padding: 0;
 }
 
-.carousel {
+.slider-content img {
+    width: 30vw;
+    border-radius: 10px;
+    margin: 3rem auto;
+}
+
+.carousel-content {
     max-width: 40vw;
-    margin: 0 auto; 
-} 
-
-.carousel img {
-    margin: 2rem;
-    border-radius: 10px;
+    margin: 0 auto;
 }
 
-
-/* ========================================================= */
-
+.carousel-content img {
+    width: 9vw;
+    margin: 0 auto;
+    border-radius: 10px;
+}
 
 /* SERVICES SECTION */
 .service-container {
@@ -424,6 +435,20 @@ p {
     .nail-img {
         width: 20vw;
     }
+
+    /* GALLERY SECTION */
+    .gallery-container {
+        max-width: 75vw;
+    }
+
+    .carousel-container {
+        max-width: 75vw;
+    }
+
+    .before-photo p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -471,9 +496,49 @@ p {
     .nail-img {
         width: 25vw;
     }
+
+    /* GALLERY SECTION */
+    .gallery-container {
+        max-width: 90vw;
+    }
+
+    .gallery-content {
+        padding: 0 8rem;
+        justify-content: space-between;
+    }
+
+    .before-photo img {
+        max-width: 30vw;
+    }
+
+    .after-photo img {
+        max-width: 40vw;
+    }
+
+    .before-photo p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    /* CAROUSEL SECTION */
+    .carousel-container {
+        max-width: 95vw;
+    }
+
+    .slider-content img {
+        width: 70vw;
+    }
+
+    .carousel-content {
+        max-width: 50vw;
+    }
+
+    .carousel-content img {
+        width: 20vw;
+    }
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     /* GLOBAL CONFIGURATION */
     body {
@@ -574,9 +639,11 @@ p {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
-        /* Ajuste a opacidade conforme necessário */
         z-index: 1;
-        /* Certifique-se de que o overlay esteja acima da imagem de fundo */
+    }
+
+    .hero-banner-pages {
+        height: 22.6rem;
     }
 
     .hero-action {
@@ -655,7 +722,67 @@ p {
         margin: 1.5rem 0;
     }
 
-    /* FOOTER */
+    /* GALLERY SECTION */
+    .gallery-container {
+        max-width: 90vw;
+        margin: 2rem auto 4rem;
+        padding: 1.4rem 0;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 5px #c5c5c5;
+    }
+
+    .before-text-desktop {
+        display: none;
+    }
+
+    .before-text-mobile {
+        display: block;
+    }
+
+    .gallery-container .before-text-mobile {
+        width: 75vw;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-content {
+        padding: 0 1.4rem;
+        justify-content: space-between;
+    }
+
+    .gallery-content h3 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .before-photo img {
+        max-width: 40vw;
+    }
+
+    .after-photo img {
+        max-width: 40vw;
+    }
+
+    /* CAROUSEL SECTION */
+    .carousel-container {
+        max-width: 95vw;
+    }
+
+    .slider-content img {
+        width: 90vw;
+    }
+
+    .carousel-content {
+        max-width: 70vw;
+    }
+
+    .carousel-content img {
+        width: 30vw;
+    }
+
+    /* FOOTER SECTION */
     .mobile-footer {
         flex-direction: column-reverse;
     }
