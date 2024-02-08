@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Sellet - Página Inicial</title>
+        <title>Sellet - Quem somos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Maicon Botelho">
-        <meta name="description" content="Na Séllet oferecemos mais que unhas esmaltadas. Aqui você encontra e faz amigas, toma um mate fresquinho, mas também tem o cafezinho que não pode faltar!">
-        <meta name="keywords" content="esmalteria, esmalteria igrejinha, manicure igrejinha, manicure, alongamento de unhas, esmaltação, pedicure">
+        <meta name="description"
+            content="Na Séllet oferecemos mais que unhas esmaltadas. Aqui você encontra e faz amigas, toma um mate fresquinho, mas também tem o cafezinho que não pode faltar!">
+        <meta name="keywords"
+            content="esmalteria, esmalteria igrejinha, manicure igrejinha, manicure, alongamento de unhas, esmaltação, pedicure">
+        <!-- FAV ICON -->
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
         <!-- GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +19,8 @@
         <link rel="stylesheet" href="assets/css/normalize.css">
         <!-- ICONS ICOMOON -->
         <link rel="stylesheet" href="assets/icomoon/style.css">
-        <!-- CSS -->
+        <!-- MY -->
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- FAV ICON -->
-        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
-        <!-- JAVASCRIPT -->
         <script src="assets/js/script.js" defer></script>
     </head>
     <body>
@@ -29,64 +30,42 @@
                 <a href="index.html"><img class="nav-logo" src="assets/img/logo.png" alt="logo Séllet esmalteria"></a>
                 <button class="nav-toggle" onclick="toggleNav(event)"><span class="toggle-icon">&#9776;</span></button>
                 <ul class="nav-menu">
-                    <li class="menu-item pagina-atual"><a href="index.html">Página Inicial</a></li>
+                    <li class="menu-item"><a href="index.html">Página Inicial</a></li>
                     <li class="menu-item"><a href="galeria.html">Galeria</a></li>
                     <li class="menu-item"><a href="pacotes.html">Pacotes</a></li>
-                    <li class="menu-item"><a href="quemSomos.html">Quem Somos</a></li>
+                    <li class="menu-item pagina-atual"><a href="quemSomos.html">Quem Somos</a></li>
                     <li class="menu-item"><a href="agendamentos.html">Agendamentos</a></li>
                 </ul>
             </nav>
-            <!-- MAIN BANNER -->
-            <div class="hero-banner">
-                <div class="hero-action">
-                    <h1>Agende já seu horário</h1>
-                    <a class="button" href="https://api.whatsapp.com/send?phone=5551999484099">Agende aqui!</a>
+            <!-- SOMOS BANNER -->
+            <div class="hero-banner-somos">
+                <div class="hero-action hero-action-pages">
+                    <h1 class="hero-titulo">Quem somos</h1>
+                    <p class="hero-text">Conheça um pouco mais sobre nós</p>
                 </div>
             </div>
         </header>
         <main>
-            <!-- WELCOME SECTION -->
-            <section class="container-content">
-                <div class="main-container content-box mobile-box">
-                    <img class="vetor" src="assets/img/Vector.svg" alt="desenho de uma mão">
-                    <article class="text-box">
-                        <h2>Seja bem vinda!</h2>
-                        <p>Na Séllet oferecemos mais que unhas esmaltadas. Aqui você encontra e faz amigas, toma um mate
-                            fresquinho, mas também tem o cafezinho que não pode faltar! Venha nos conhecer e entenda porquê
-                            somos O LUGAR PARA MULHERES "SELLÉTAS".</p>
-                    </article>
-                </div>
-            </section>
-            <!-- SERVICES SECTION -->
-            <section>
-                <div class="service-container">
-                    <h2 class="desktop-service">Conheça nossos serviços</h2>
-                    <h2 class="mobile-service">Serviços</h2>
-                    <div class="service-cards">
-                        <article class="cards-item">
-                            <h3>Esmaltação Tradicional</h3>
-                            <img class="nail-img" src="assets/img/galeria/nail/nail5.jpg" alt="foto de unha com esmaltação tradicional">
-                            <p>A esmaltação convencional possui uma durabilidade padrão de aproximadamente 7 dias</p>
-                        </article>
-                        <article class="cards-item">
-                            <h3>Esmaltação em Gel</h3>
-                            <img class="nail-img" src="assets/img/galeria/nail/nail10.jpg" alt="foto de unha com esmaltação tradicional">
-                            <p>O esmalte em gel é mais resistente e impede que aquela pontinha descasque, desbote ou perca
-                                ainda o brilho. Sensacional, né?</p>
-                        </article>
-                        <article class="cards-item">
-                            <h3>Alongamento</h3>
-                            <img class="nail-img" src="assets/img/galeria/nail/nail2.jpg" alt="foto de unha com esmaltação tradicional">
-                            <p>É feito a partir de uma técnica que envolve a aplicação de um gel específico por cima da unha
-                                natural. Resultando em unhas fortes e do tamanho desejado</p>
-                        </article>
-                    </div>
-                    <a class="button saiba-mais" href="https://api.whatsapp.com/send?phone=5551999484099">Saiba mais</a>
-                </div>
+            <!-- SELLET SECTION -->
+            <section class="main-container">
+                <article class="main-sellet">
+                    <h2>Somos a Sellet Esmalteria</h2>
+                    <p>A Séllet nasceu em 2021, período pandêmico onde não se podia trabalhar. Era somente o essencial!!
+                        Nesse momento a Séllet precisou abrir as portas. Abriu as portas para algo q era essencial sim, era
+                        essencial para a mente e corpo das mulheres. Auto estima tem prioridade aqui.</p>
+                    <p>A Séllet tem como prevalência o bem estar e aconchego do cliente. Ser um lugar para você ter um colo
+                        e também a auto estima elevada e devolvida. Risos e beleza andam juntos. Conversa e mate, se isso
+                        não te alegrar, café tbm tem tá?! Rsrsrs</p>
+                    <p>O amor impera nessa casa.Amor por unhas.Amor por cores.Amor por formas.Amor por pessoas.
+                        Amor por ver que temos aqui em nossas mãos o que vc precisa para ser uma mulher mais confiante e
+                        empoderada.Você é única e é isso que vamos te mostrar. Vem conhecer. É um prazer mostrar nossa casa
+                        e te fazer parte dessa selléta carta de clientes que são sempre essenciais e prioridade para nossa
+                        casa!!</p>
+                </article>
             </section>
             <!-- PROFESSIONAL SECTION -->
             <section class="container-content">
-                <h2>Profissional Titular</h2>
+                <h2 class="head-professional">Profissional Titular</h2>
                 <div class="content-box main-container founder-img">
                     <img class="nail-img" src="assets/img/perfil1.jpg" alt="foto de perfil Fernanda Telles">
                     <article class="text-box">
@@ -111,11 +90,15 @@
                     <!-- CONTACTS -->
                     <div>
                         <div class="main-container mobile-icon">
-                            <svg class="icon icon-envelop"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-envelop"></use></svg>
+                            <svg class="icon icon-envelop">
+                                <use xlink:href="assets/icomoon/symbol-defs.svg#icon-envelop"></use>
+                            </svg>
                             <p>contato@selletesmalteria.com.br</p>
                         </div>
                         <div class="main-container mobile-icon">
-                            <svg class="icon icon-whatsapp"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-whatsapp"></use></svg>
+                            <svg class="icon icon-whatsapp">
+                                <use xlink:href="assets/icomoon/symbol-defs.svg#icon-whatsapp"></use>
+                            </svg>
                             <p>(51) 99948.4099</p>
                         </div>
                     </div>
@@ -123,12 +106,16 @@
                     <div class="icon-footer">
                         <div class="icon-circle">
                             <a href="https://www.instagram.com/sellet_esmalteria/" target="_blank">
-                                <svg class="icon icon-instagram"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-instagram"></use></svg>
+                                <svg class="icon icon-instagram">
+                                    <use xlink:href="assets/icomoon/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
                             </a>
                         </div>
                         <div class="icon-circle">
                             <a href="https://www.facebook.com/sellet.esmalteria" target="_blank">
-                                <svg class="icon icon-facebook2"><use xlink:href="assets/icomoon/symbol-defs.svg#icon-facebook2"></use></svg>
+                                <svg class="icon icon-facebook2">
+                                    <use xlink:href="assets/icomoon/symbol-defs.svg#icon-facebook2"></use>
+                                </svg>
                             </a>
                         </div>
                     </div>
