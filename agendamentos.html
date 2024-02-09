@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Sellet - Agendamentos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Maicon Botelho">
+        <meta name="description"
+            content="Na Séllet oferecemos mais que unhas esmaltadas. Aqui você encontra e faz amigas, toma um mate fresquinho, mas também tem o cafezinho que não pode faltar!">
+        <meta name="keywords"
+            content="esmalteria, esmalteria igrejinha, manicure igrejinha, manicure, alongamento de unhas, esmaltação, pedicure">
+        <!-- FAV ICON -->
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <!-- NORMALIZE CSS -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <!-- ICONS ICOMOON -->
+        <link rel="stylesheet" href="assets/icomoon/style.css">
+        <!-- MY -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js" defer></script>
+    </head>
+    <body>
+        <header class="main-color">
+            <!-- NAVBAR  -->
+            <nav class="main-container mobile-header">
+                <a href="index.html"><img class="nav-logo" src="assets/img/logo.png" alt="logo Séllet esmalteria"></a>
+                <button class="nav-toggle" onclick="toggleNav(event)"><span class="toggle-icon">&#9776;</span></button>
+                <ul class="nav-menu">
+                    <li class="menu-item"><a href="index.html">Página Inicial</a></li>
+                    <li class="menu-item"><a href="galeria.html">Galeria</a></li>
+                    <li class="menu-item"><a href="pacotes.html">Pacotes</a></li>
+                    <li class="menu-item"><a href="quemSomos.html">Quem Somos</a></li>
+                    <li class="menu-item pagina-atual"><a href="agendamentos.html">Agendamentos</a></li>
+                </ul>
+            </nav>
+            <!-- AGENDAMENTOS BANNER -->
+            <div class="hero-banner-agendamentos">
+                <div class="hero-action hero-action-pages">
+                    <h1 class="hero-titulo">Agendamentos</h1>
+                    <p class="hero-text">Veja como estamos pertinho de vocês</p>
+                </div>
+            </div>
+        </header>
+        <main class="container-content">
+            <!-- LOGIN SECTION -->
+            <section class="login-container">
+                <h2>Área da Cliente</h2>
+                <form class="login-content" action="#" method="post">
+                    <fieldset class="login-box">
+                        <legend>Faça login para acessar sua conta</legend>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" pattern=".+@example\.com" required autofocus
+                            autocomplete="on" />
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" minlength="8" required />
+                        <input class="button" type="submit" value="Entrar" />
+                    </fieldset>
+                </form>
+            </section>
+            <!-- MAP SECTION -->
+            <section class="map-container">
+                <article class="map-content">
+                    <h2>Nosso endereço</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.7295239076648!2d-50.807108823697725!3d-29.582472110009338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951922ff8288cb8d%3A0x33df9ac62419b785!2sR.%20Evaristo%20Veiga%2C%2014%20-%2015%20De%20Novembro%2C%20Igrejinha%20-%20RS%2C%2095650-000!5e0!3m2!1spt-BR!2sbr!4v1707440431145!5m2!1spt-BR!2sbr"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <address class="contatos-address">
+                        Rua Evaristo da Veiga, 14<br>
+                        Bairro: XV de novembro - Igrejinha/RS<br>
+                        CEP: 95650-00<br>
+                    </address>
+                </article>
+            </section>
+        </main>
+        <footer class="main-color">
+            <div class="main-container mobile-footer">
+                <img class="nav-logo" src="assets/img/logoLL.png" alt="logo séllet esmalteria versão LL">
+                <address class="main-container footer-container">
+                    <!-- CONTACTS -->
+                    <div>
+                        <div class="main-container mobile-icon">
+                            <svg class="icon icon-envelop">
+                                <use xlink:href="assets/icomoon/symbol-defs.svg#icon-envelop"></use>
+                            </svg>
+                            <p>contato@selletesmalteria.com.br</p>
+                        </div>
+                        <div class="main-container mobile-icon">
+                            <svg class="icon icon-whatsapp">
+                                <use xlink:href="assets/icomoon/symbol-defs.svg#icon-whatsapp"></use>
+                            </svg>
+                            <p>(51) 99948.4099</p>
+                        </div>
+                    </div>
+                    <!-- SOCIAL ICONS -->
+                    <div class="icon-footer">
+                        <div class="icon-circle">
+                            <a href="https://www.instagram.com/sellet_esmalteria/" target="_blank">
+                                <svg class="icon icon-instagram">
+                                    <use xlink:href="assets/icomoon/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="icon-circle">
+                            <a href="https://www.facebook.com/sellet.esmalteria" target="_blank">
+                                <svg class="icon icon-facebook2">
+                                    <use xlink:href="assets/icomoon/symbol-defs.svg#icon-facebook2"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </address>
+            </div>
+            <p class="direitos-autorais">Copyright &copy; 2024 Séllet Esmalteria | Powered by Séllet Esmalteria</p>
+        </footer>
+    </body>
+</html>
