@@ -721,14 +721,15 @@ p {
 
     .nav-menu.open {
         height: auto;
-        width: 100vw;
+        width: 80vw;
         display: block;
         color: var(--primary-color);
-        background-color: #ffffff;
+        background-color: #fdeee9;
         border: .1rem solid #ccc;
+        border-radius: 0 0 0 10px;
         position: absolute;
         top: 7.8rem;
-        left: 0;
+        right: 0;
         z-index: 999;
     }
 
@@ -757,7 +758,7 @@ p {
 
     .menu-item:not(:last-child),
     .menu-item.pagina-atual:not(:last-child) {
-        border-bottom: 2px solid #D9D9D9;
+        border-bottom: 1px solid #D9D9D9;
     }
 
     .menu-item a {
