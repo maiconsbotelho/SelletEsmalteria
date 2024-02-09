@@ -76,6 +76,15 @@ p {
     gap: 1rem;
 }
 
+.nav-fixed {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+}
+
+
 .menu-item {
     list-style: none;
     margin-right: 1rem;
