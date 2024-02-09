@@ -1,53 +1,59 @@
-// TOGGLE MENU
-function toggleNav(event) {
-    event.stopPropagation(); 
-    var navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('open');
+// MOBILE MENU
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const navMenu = document.querySelector('.nav-menu');
+    const navToggle = document.querySelector('.nav-toggle');
+    const toggleIcon = navToggle.querySelector('.toggle-icon');
+    const menuItems = document.querySelectorAll('.menu-item a');
 
-    var navToggle = document.querySelector('.nav-toggle');
-    navToggle.classList.toggle('open');
-
-    var toggleIcon = navToggle.querySelector('.toggle-icon');
-    if (navToggle.classList.contains('open')) {
-        toggleIcon.textContent = '✕'; 
-    } else {
-        toggleIcon.textContent = '☰';
+    // TOGGLE MENU
+    function toggleNav(event) {
+        event.stopPropagation(); 
+        navMenu.classList.toggle('open');
+        navToggle.classList.toggle('open');
+        toggleIcon.textContent = navToggle.classList.contains('open') ? '✕' : '☰';
     }
-}
 
-// Fechar o menu ao clicar em um item 
-document.querySelectorAll('.menu-item a').forEach(function (item) {
-    item.addEventListener('click', function () {
-        var navMenu = document.querySelector('.nav-menu');
-        if (window.innerWidth < 768) {
-            navMenu.style.display = 'none';
+    // Fechar o menu ao clicar em um item 
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            if (window.innerWidth < 768) {
+                navMenu.classList.remove('open');
+            }
+        });
+    });
+
+    // Fechar o menu ao redimensionar a janela 
+    window.addEventListener('resize', function () {
+        if (window.innerWidth >= 768) {
+            navMenu.classList.remove('open');
         }
     });
+
+    // Fechar o manu quando o usuário rolar a página
+    window.addEventListener('scroll', function() {
+        if (navMenu.classList.contains('open')) {
+            navMenu.classList.remove('open');
+            navToggle.classList.remove('open');
+            toggleIcon.textContent = '☰';
+        }
+    });
+
+    // Fechar o menu quando o usuário clicar fora dele
+    function fecharMenuFora(e) {
+        if (!navMenu.contains(e.target)) {
+            navMenu.classList.remove('open');
+            toggleIcon.textContent = '☰';
+        }
+    }
+
+    // Adiciona um ouvinte de evento de clique ao documento inteiro
+    document.addEventListener('click', fecharMenuFora);
+
+    // Evento de clique no toggle para abrir e fechar o menu
+    navToggle.addEventListener('click', toggleNav);
 });
 
-// Fechar o menu ao redimensionar a janela 
-window.addEventListener('resize', function () {
-    var navMenu = document.querySelector('.nav-menu');
-    if (window.innerWidth >= 768) {
-        navMenu.style.display = '';
-    }
-});
-
-// Fechar o menu quando o usuário clicar fora dele
-function fecharMenuFora(e) {
-    var navMenu = document.querySelector('.nav-menu');
-    if (!navMenu.contains(e.target)) {
-        navMenu.classList.remove('open');
-
-        // Atualiza o ícone do botão toggle
-        var navToggle = document.querySelector('.nav-toggle');
-        var toggleIcon = navToggle.querySelector('.toggle-icon');
-        toggleIcon.textContent = '☰';
-    }
-}
-
-// Adiciona um ouvinte de evento de clique ao documento inteiro
-document.addEventListener('click', fecharMenuFora);
 
 // CAROUSEL SECTION
 $('.slider-content').slick({

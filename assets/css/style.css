@@ -727,6 +727,7 @@ p {
         background-color: #fdeee9;
         border: .1rem solid #ccc;
         border-radius: 0 0 0 10px;
+        box-shadow: 0 0 10px;
         position: absolute;
         top: 7.8rem;
         right: 0;
@@ -759,6 +760,11 @@ p {
     .menu-item:not(:last-child),
     .menu-item.pagina-atual:not(:last-child) {
         border-bottom: 1px solid #D9D9D9;
+    }
+
+    .menu-item.pagina-atual {
+        border-bottom: none;
+        font-weight: bold;
     }
 
     .menu-item a {
