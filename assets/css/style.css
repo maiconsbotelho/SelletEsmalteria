@@ -84,16 +84,21 @@ p {
 
 }
 
-
 .menu-item {
     list-style: none;
-    margin-right: 1rem;
-    padding: 16px 24px;
 }
 
-.menu-item:hover,
-.menu-item:active,
-.menu-item:focus-within {
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 16px 24px;  
+}
+
+.menu-item a:hover,
+.menu-item a:active,
+.menu-item a:focus-within {
     border-radius: 8px 8px 0px 0px;
     border-bottom: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.10);
@@ -101,12 +106,6 @@ p {
 
 .menu-item.pagina-atual {
     border-bottom: 2px solid #FFF;
-}
-
-.menu-item a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.6rem;
 }
 
 /* TOGGLE BUTTON */
@@ -389,7 +388,6 @@ p {
     background-color: rgba(192, 142, 156, 42%);
 }
 
-
 /* SELLET SECTION */
 .main-sellet {
     margin: 64px auto;
@@ -430,8 +428,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 .login-content {
@@ -539,12 +535,6 @@ p {
         max-width: 75vw;
     }
 
-    /* NAVBAR */
-    .menu-item {
-        padding: 10px 14px;
-        margin: 0;
-    }
-
     /* MAIN BANNER */
     .hero-banner {
         height: 60rem;
@@ -601,12 +591,6 @@ p {
 
     .main-container {
         max-width: 90vw;
-    }
-
-    /* NAVBAR */
-    .menu-item {
-        padding: 10px 14px;
-        margin: 0;
     }
 
     .menu-item a {
