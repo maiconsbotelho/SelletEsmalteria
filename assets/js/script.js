@@ -54,6 +54,27 @@ document.addEventListener('DOMContentLoaded', function() {
     navToggle.addEventListener('click', toggleNav);
 });
 
+// CARREGAMENTO DE IMAGENS
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Lista de URLs das imagens dos banners
+    const bannerUrls = [
+        '../img/banner.png',
+        '../img/banner-galeria.jpg'
+       
+    ];
+
+    // Função para carregar uma imagem em segundo plano
+    function preloadImage(url) {
+        const img = new Image();
+        img.src = url;
+    }
+
+    // Iterar sobre a lista de URLs e pré-carregar as imagens
+    bannerUrls.forEach(preloadImage);
+});
+
+
 
 // CAROUSEL SECTION
 $('.slider-content').slick({
