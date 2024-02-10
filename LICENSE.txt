@@ -1,0 +1,12 @@
+Proprietary License (All Rights Reserved)
+
+Copyright (c) 2024 Maicon da Silva Botelho
+
+All rights to this project are reserved to the author. Unauthorized copying, modification, 
+distribution and use of this software without the express permission of the author is prohibited.
+
+For permission to use this software in any way not expressly authorized by this license, 
+please contact the author at maicon@maiconbotelho.com.br.
+
+BY USING THIS SOFTWARE, YOU AGREE TO THE TERMS AND CONDITIONS OF THIS LICENSE. 
+IF YOU DO NOT AGREE TO THESE TERMS AND CONDITIONS, DO NOT USE THE SOFTWARE.
